@@ -1,0 +1,9 @@
+<h2><slot></slot></h2>
+<ul>
+  <script webc:type="render" webc:is="template">
+    function renderItems() {
+      const numbers = ['One', 'Two', 'Three']
+      return numbers.map(number => /*html*/`<li>${number}</li>`).join('')
+    }
+  </script>
+</ul>

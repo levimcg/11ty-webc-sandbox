@@ -1,0 +1,10 @@
+---
+layout: base.webc
+someData: "List components, man"
+---
+
+<list-component>
+  <template @html="someData" webc:nokeep></template>
+</list-component>
+
+<list-component-props @heading="someData"></list-component-props>
